@@ -19,22 +19,25 @@ export default (() => {
 				bottom="735.8363055555556px"
 				height="180px"
 				left="170px"
-				right="226.8002831632653px"
+				right="180.67834821428568px"
 				top="90px"
-				width="883.1827168367347px"
+				width="929.2936517857144px"
 				sm-left="20px"
-				sm-font="normal 800 32px/1.3 Montserrat, sans-serif"
-				sm-right="19.01800271739131px"
-				sm-width="auto"
-				sm-bottom="812.7126983695653px"
-				sm-height="103.12330163043478px"
+				sm-font="normal 800 40px/1.3 Montserrat, sans-serif"
+				sm-right="135.471125px"
+				sm-width="420.515875px"
+				sm-bottom="749.2991875px"
+				sm-height="166.5078125px"
 				sm-top="90px"
+				sm-display="inline"
 			>
-				Найкращий тамподрук у Європі
+				Найкращий тамподрук{" "}
+				<br />
+				у Європі
 			</Text>
 			<Components.MainCta
 				width="auto;"
-				top="336px"
+				top="350px"
 				right="auto"
 				bottom="auto"
 				left="170px"
@@ -43,11 +46,13 @@ export default (() => {
 				sm-left="20px"
 				sm-right="auto"
 				sm-bottom="auto"
-				sm-top="248px"
+				sm-top="290px"
 				sm-height="48px"
 				sm-min-height="48px"
 				sm-padding="8px 20px 8px 20px"
 				sm-font="normal normal 550 16px/1.5 --fontFamily-googleLato"
+				md-top="430px"
+				lg-top="350px"
 			>
 				Переглянути роботи
 			</Components.MainCta>
