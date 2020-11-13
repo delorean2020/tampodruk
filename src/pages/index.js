@@ -2,6 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { Override, Menu, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -13,6 +14,9 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Box height="900px" quarkly-title="Frame">
+			<Link href="#">
+				Some text
+			</Link>
 			<Text
 				position="absolute"
 				font="normal 800 42px/1.3 --fontFamily-googleNotoSansJp"
@@ -52,6 +56,33 @@ export default (() => {
 				Переглянути роботи
 			</Components.MainCta>
 		</Box>
+		<Section background-color="--dark" text-align="center" padding="32px 0">
+			<Menu
+				display="flex"
+				justify-content="center"
+				font="--lead"
+				font-weight="700"
+				margin="-6px 0 16px"
+				md-flex-direction="column"
+				md-align-items="center"
+			>
+				<Override slot="link" text-decoration="none" color="--light" padding="6px 12px" />
+				<Override slot="link-active" color="--primary" />
+				<Override slot="item" padding="6px 0px" />
+				<Override slot="link-pro-nas">
+					Про нас
+				</Override>
+			</Menu>
+			<Link
+				href="mailto:hello@company.com"
+				text-decoration-line="none"
+				variant="--base"
+				color="--grey"
+				hover-color="--primary"
+			>
+				hello@company.com
+			</Link>
+		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
