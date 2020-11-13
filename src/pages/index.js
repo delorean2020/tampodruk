@@ -2,7 +2,6 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -16,7 +15,7 @@ export default (() => {
 		<Box height="900px" quarkly-title="Frame">
 			<Text
 				position="absolute"
-				font="--headline2"
+				font="normal 800 42px/1.3 --fontFamily-googleNotoSansJp"
 				bottom="735.8363055555556px"
 				height="180px"
 				left="170px"
@@ -53,48 +52,6 @@ export default (() => {
 				Переглянути роботи
 			</Components.MainCta>
 		</Box>
-		<Section background-color="--dark" text-align="center" padding="32px 0">
-			<Link
-				href="#"
-				bottom="232.91178097345133px"
-				height="24px"
-				left="199px"
-				position="absolute"
-				right="1135.3577323008851px"
-				top="754px"
-				width="100px"
-				font="400 14px/1.5 --fontFamily-googleLato"
-				white-space="nowrap"
-				text-align="left"
-			>
-				Про нас
-			</Link>
-			<Menu
-				display="flex"
-				justify-content="center"
-				font="--lead"
-				font-weight="700"
-				margin="-6px 0 16px"
-				md-flex-direction="column"
-				md-align-items="center"
-			>
-				<Override slot="link" text-decoration="none" color="--light" padding="6px 12px" />
-				<Override slot="link-active" color="--primary" />
-				<Override slot="item" padding="6px 0px" />
-				<Override slot="link-pro-nas">
-					Про нас
-				</Override>
-			</Menu>
-			<Link
-				href="mailto:hello@company.com"
-				text-decoration-line="none"
-				variant="--base"
-				color="--grey"
-				hover-color="--primary"
-			>
-				hello@company.com
-			</Link>
-		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
